@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+
+body {
+    font-family: 'Rampart One', cursive;
+    background-color: #00425A;
+}
+.titulo {
+    font-size: 50px;
+    color:  #BFDB38;
+    
+}
+.subtitulo {
+    font-size: 30px;
+    color:  #BFDB38;
+}
+#seleccionarMascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #BFDB38;
+    font-size: 17px;
+
+}
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#mapa {
+    margin: 35px;
+}
+#ver-mapa button {
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    color: #BFDB38;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid cornflowerblue;
+    font-family: 'Rampart One', cursive;
+    border-radius: 20px;
+    font-size: 17px;
+}
+
+.tarjetas, .tarjetasDeAtaques {
+    display: flex;
+    gap: 10px;
+}
+.tarjetaDeMokepon {
+    width: 200px;
+    height: 105px;
+    padding: 10px;
+    background: #3F4E4F;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid cornflowerblue;
+    border-radius: 20px;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetaDeMokepon img {
+    width: 100px;
+}
+#botonSeleccionar {
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    color: #BFDB38;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid cornflowerblue;
+    margin-top: 30px;
+    margin-right: 20px;
+    font-family: 'Rampart One', cursive;
+    border-radius: 20px;
+    font-size: 15px;
+    
+}
+
+input {
+    display: none;
+}
+input:checked + label {
+    background-color: aliceblue;
+}
+
+#seleccionarAtaque {
+    flex-direction: column;
+    align-items: center;
+}
+.botones {
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    color: #BFDB38;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid cornflowerblue;
+    margin-top: 30px;
+    margin-right: 20px;
+    font-family: 'Rampart One', cursive;
+    border-radius: 20px;
+    font-size: 17px;
+    
+}
+#botonFuego {
+    color: #ff6f00;
+    border: 1px solid #ff6f00;
+}
+#botonTierra {
+    color: #CC9544;
+    border: 1px solid #CC9544;
+}
+#botonAgua {
+    color: #00ffff;
+    border: 1px solid #00ffff;
+}
+#mensajes {
+    background: transparent;
+    color: white;
+    width: 215px;
+    height: 203px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+#botonReiniciar {
+    font-family: 'Rampart One', cursive;
+    border-radius: 20px;
+    background-color:  #00425A;
+    color: #BFDB38;
+    border: 1px solid cornflowerblue;
+    width: 110px;
+    height: 40px;
+}
+#ataquesVidas {
+    display:grid;
+    grid-template-columns: 150px 150px;
+    margin-top: 10px;
+    color: white;
+    border: 1px solid cornflowerblue;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.ataquesVidasJugador, .ataquesVidasEnemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width: 560px) {
+    .tarjetas,.tarjetasDeAtaques {
+        flex-direction: column;
+    }
+   
+}
+@media (max-width: 360px) {
+    #ver-mapa div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+}
